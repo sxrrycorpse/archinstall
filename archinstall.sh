@@ -67,3 +67,7 @@ arch-chroot /mnt sed -i 's/# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/'
 # Enable multilib
 arch-chroot /mnt sed -i 's/#\[multilib\]/\[multilib\]/' /etc/pacman.conf
 arch-chroot /mnt sed -i 's\#Include = /etc/pacman.d/mirrorlist\Include = /etc/pacman.d/mirrorlist\' /etc/pacman.conf
+
+# Install additional packages
+pacman -Sy mesa libva libxinerama vulkan-radeon lib32-vulkan-radeon xorg-server xorg-xinput xf86-video-amdgpu xf86-video-ati maim xclip noto-fonts yt-dlp python-mutagen
+
