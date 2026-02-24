@@ -68,8 +68,8 @@ arch-chroot /mnt sed -i 's/# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/'
 arch-chroot /mnt sed -i 's/#\[multilib\]/\[multilib\]/' /etc/pacman.conf
 arch-chroot /mnt sed -i 's\#Include = /etc/pacman.d/mirrorlist\Include = /etc/pacman.d/mirrorlist\' /etc/pacman.conf
 
-# Install additional packages
-pacman -Sy mesa libva libxinerama vulkan-radeon lib32-vulkan-radeon xorg-server xorg-xinput xf86-video-amdgpu xf86-video-ati maim xclip noto-fonts yt-dlp python-mutagen
+# Additional packages
+pacman -Sy mesa libva libxft libxinerama vulkan-radeon lib32-vulkan-radeon xorg-server xorg-xinput xf86-video-amdgpu xf86-video-ati maim xclip noto-fonts yt-dlp python-mutagen imv mpv thunar firefox lxappearance nwg-look ttf-firacode-nerd ffmpegthumbnails ffmpegthumbs tumbler discord qbittorrent ttf-sazanami ttf-baekmuk 
 
 # Install yay
 git clone https://aur.archlinux.org/yay-bin.git
