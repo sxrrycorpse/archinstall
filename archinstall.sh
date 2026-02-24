@@ -77,5 +77,8 @@ cd yay-bin
 makepkg -si
 cd ..
 
+# AUR packages
+yay -Sy rua cozette-otb
+
 # Autostart apps
 echo "picom &\ndunst &\nslstatus &\nnitrogen --restore \nexec dwm" > .xinitrc
