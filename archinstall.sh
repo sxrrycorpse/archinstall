@@ -71,3 +71,8 @@ arch-chroot /mnt sed -i 's\#Include = /etc/pacman.d/mirrorlist\Include = /etc/pa
 # Install additional packages
 pacman -Sy mesa libva libxinerama vulkan-radeon lib32-vulkan-radeon xorg-server xorg-xinput xf86-video-amdgpu xf86-video-ati maim xclip noto-fonts yt-dlp python-mutagen
 
+# Install yay
+git clone https://aur.archlinux.org/yay-bin.git
+cd yay-bin
+makepkg -si
+cd ..
