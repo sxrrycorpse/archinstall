@@ -65,5 +65,5 @@ usermod -aG wheel $username
 arch-chroot /mnt sed -i 's/# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
 
 # Enable multilib
-arch-chroot /mnt sed -i 's/#[multilib]/[multilib]/' /etc/pacman.conf
-arch-chroot /mnt sed -i 's/#Include = /etc/pacman.d/mirrorlist/Include = /etc/pacman.d/mirrorlist/' /etc/pacman.conf
+arch-chroot /mnt sed -i 's/#\[multilib\]/\[multilib\]/' /etc/pacman.conf
+arch-chroot /mnt sed -i 's\#Include = /etc/pacman.d/mirrorlist\Include = /etc/pacman.d/mirrorlist\' /etc/pacman.conf
